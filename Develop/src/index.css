@@ -118,3 +118,45 @@ tbody tr:nth-child(odd) {
   width: 80vw;
   table-layout: fixed;
 }
+
+.candidate-card {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.table {
+  border-collapse: separate;
+  border-spacing: 0 4px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.table th {
+  text-align: left;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.table td {
+  padding: 10px;
+}
+
+.nav {
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
