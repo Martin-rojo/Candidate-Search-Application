@@ -6,11 +6,8 @@ export default defineConfig({
   envDir: './',
   plugins: [react()],
   server: {
-    host: true,
-    port: Number(process.env.PORT) || 0.0.0.0,
-  },
-  preview: {
-    host: true,
-    port: Number(process.env.PORT) || 0.0.0.0,
+    port: process.env.PORT ? parseInt(process.env.PORT) : 3000,
+    host: '0.0.0.0',
+    allowedHosts: ["candidate-search-application-op8c.onrender.com"]
   }
 });
