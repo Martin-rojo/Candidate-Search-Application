@@ -11,5 +11,9 @@ export default defineConfig({
   preview: {
     host: true,
     port: Number(process.env.PORT) || 3000,
+    allowedHosts: [
+      'candidate-search-application-op8c.onrender.com',
+      '*.onrender.com'
+    ]
   }
 });
